@@ -23,5 +23,5 @@ def test_div():
     assert div(1, -1) == -1
     assert div(-1, 1) == -1
     assert div(-1, -1) == 1
-    with pytest.raises(ZeroDivisionError):
+    with pytest.raises(ValueError):
         div(1, 0)
